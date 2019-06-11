@@ -25,13 +25,17 @@ header{
 }
 
 #barra{
-
     position:relative;
     display:inline-block;
-    left:20%;
-    top:20px;
+    left: 15%; 
+    top: 5px;
     width: 66%;
     height: 44px;
+}
+
+.buscador{
+    position: relative;
+    top:5px;
 }
 
 #barra #menu{

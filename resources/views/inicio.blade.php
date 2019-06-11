@@ -36,47 +36,30 @@
                 <img src="/images/logo.png" width="100%" height="auto">
             </div>
             <nav id="barra">
-                <ul id="menu">
-    
-                    <li class="iz "><a href="index.php" class="co"> <span class="icon-home3" style="color:;"></span> Inicio </a></li>
-                        
-                    <li class="iz " ><a href="" class="co"> <span class="icon-images"></span> Modelos </a>
-                        <ul>
-                            <li><a href="" id="subcajas" class="co"> Niña </a></li> <center><hr class="linea" width="90%"  color="#47425d"/></center>
-    
-                            <li><a href="" id="subcajas" class="co"> Dama </a></li><center><hr class="linea" width="90%"  color="#47425d"/></center>
-    
-                            <li><a href="" id="subcajas" class="co"> Caballero </a></li>
-                        </ul>
+                <ul class="nav justify-content-end">
+                    <form class="form-inline my-2 my-lg-0 col-md-6" style="diplay:inline-block;">
+                        <input class="form-control  col-md-12 mr-sm-8 " type="search" placeholder="Busqueda Rapida" aria-label="Search">
+                    </form>
+                    <li class="nav-item">
+                      <a class="nav-link active co" href='" . route(inicio) . "'>Inicio</a>
                     </li>
-                        
-                    <li class="iz " ><a href="" class="co"><span class="icon-book"></span> Catalogos </a>
-                        <ul>
-                            <li><a href="" id="subcajas" class="co"> Invierno </a></li> <center><hr class="linea" width="90%"  color="#47425d"/></center>
-    
-                            <li><a href="" id="subcajas" class="co"> Primavera </a></li><center><hr class="linea" width="90%"  color="#47425d"/></center>
-    
-                            <li><a href="" id="subcajas" class="co"> Otoño </a></li> <center><hr class="linea" width="90%"  color="#47425d"/></center>
-    
-                            <li><a href="" id="subcajas" class="co"> Verano </a></li><center>
-                        </ul>
+
+                    <li class="nav-item">
+                      <a class="nav-link active co" href='" . route(inicio) . "'>Contactenos</a>
                     </li>
-                        
-                    <li class="iz " ><a href="" class="co"><span class="icon-users"></span> Nosotros </a>
-                        <ul>
-                            <li><a href="" id="subcajas" class="co"> Visión </a></li> <center><hr class="linea" width="90%"  color="#47425d"/></center>
-    
-                            <li><a href="" id="subcajas" class="co"> Misión </a></li>
-                        </ul>
-                    </li>
-    
-                    <li class="iz co-linea"> | </li>
                     
-                    <li class="iz "><a href="registro.php" class="co"><span class="icon-file-text"></span> Registrarse </a></li>
-    
-                    <li class="iz " ><a href="ingresar.php" class="co"><span class="icon-enter"></span> Ingresar </a></li>
-                    </ul>
-            </nav>
+                    
+                    <li class="nav-item">
+                      <span class="co-linea"> | </span>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link co" href="#">Registrate</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link co" href="#">Ingresar</a>
+                      </li>
+                  </ul>
         </header>
 
         <div id="uno" class="contenedor">
@@ -175,8 +158,8 @@
                 </br></br></br>
             </div>
     
-            </footer>
+        </footer>
 
-        
+        <script src="/js/app.js"></script>
     </body>
 </html>
