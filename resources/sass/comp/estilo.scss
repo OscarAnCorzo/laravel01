@@ -1,0 +1,589 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.raya{
+    width:85%; 
+    margin-left: auto;
+    margin-right: auto;
+    border: 0; height: 12px; box-shadow: inset 0 12px 12px -12px orange;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background: rgba(248, 123, 20, 0.8);
+    z-index: 100;
+}
+
+#imagen{
+    width: 18%;
+    position:relative;
+    display: inline-block;
+    left:2%;
+}
+
+#barra{
+
+    position:relative;
+    display:inline-block;
+    left:20%;
+    top:20px;
+    width: 66%;
+    height: 44px;
+}
+
+#barra #menu{
+
+    width:100%;
+    height:43px;
+
+}
+
+nav{
+    margin:auto;
+    width:100%;
+    position: relative; /*para tratar de centrar el menu*/
+    left:0px;
+
+}
+
+
+/* forma a los botones */
+nav ul{
+    list-style: none; /* para quitar las viñetas */
+
+}
+
+
+/* pra todas las cajas */
+nav ul li a{
+    background: transparent;
+
+    text-decoration: none;
+    display:block;
+    width:100%;
+    position:relative;
+    font-size: 18px;
+}
+nav li{
+    position: relative;
+}
+
+nav ul li ul {
+    position: absolute;
+}
+
+nav ul li ul{
+    width: 100%;
+}
+
+nav ul .iz a{
+
+    padding: 10px 17px 10px 17px;
+}
+
+nav ul .de a{
+
+    padding: 10px 5px 10px 10px;
+}
+
+/* padding para las subcajas */
+
+nav  ul  li  ul  li  a{
+    width: auto;
+    text-align: center;
+}
+
+/* para ponerlos en forma horizontal */
+
+/* el de son los del lado izquierdo y el iz son los del lado derecho */
+nav > ul > .iz{
+    float:left;
+}
+
+nav > ul > .de{
+    float:right;
+}
+
+
+.c{
+    display: none;
+}
+
+/* cambiar el color cuando pasamos el mouse 
+nav ul li .co:hover{
+    background:#2E2EFE;
+    padding: 10px 20px 10px 20px;
+}*/
+
+/* para esconder los submenus */
+nav > ul > li > ul{
+    display:none;
+}
+
+/* para mostrar los submenus cuando pase el mouse */
+nav ul li:hover ul{
+    display: block;
+    background: #FE9A2E;
+    filter:alpha(opacity=98);-moz-opacity:.80;opacity:.80;
+}
+
+.co{
+    color:#8d1042;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.co-linea{
+    color:#8d1042;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.co:hover{
+    color:white;
+    border-color: red;
+}
+
+/* ------------- Contenido -------------- */
+/* primera caja */
+#uno{
+    width:100%;
+    height: 657px;
+    background: url("imagen/slide3.jpg") no-repeat  center center;
+    background-size: 100% 657px;
+    position: relative;
+}
+
+#contenido{
+    
+    position: relative;
+    width: 90%;
+    top: 28%;
+    left: 6%;
+}
+
+#letra{
+    color: white
+}
+
+.bot{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* segunda caja */
+#dos{
+    width:100%;
+    height: 590px;
+    background: #F0F3F4;
+    position: relative;
+}
+
+#titulo{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 55px; 
+}
+
+.texto-titulo{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#a, #b, #c{
+    width: 33%;
+    float: left;
+}
+
+
+.x{
+    width: 65%;
+    height: 400px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#hombre{
+    background-image: url('imagen/hombre.jpg') ;
+}
+
+#niña{
+    background-image: url('imagen/n4.jpg') ;
+}
+
+#mujer{
+    background-image: url('imagen/mujer.jpg') ;
+}
+
+#hombre, #niña, #mujer{
+    background-size: 100% 200px;
+}
+
+.x1{
+    width: 100%;
+    height: 200px;
+    border-radius: 60% 60% 60% 60%;
+}
+
+.x2{
+    width: 100%;
+    height: 200px;
+}
+
+.subtitulo{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cont{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn.btn-primary.enlaton.bot1 {
+    color: #ffffff;
+    background-color: #6d3483;
+    background-image: linear-gradient(to bottom, #7742c7, #802da1);
+    border-color: #712b99 #712b99 #712b99;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.btn.btn-primary.enlaton:hover.bot1 {
+    color: #ffffff;
+    background-color: #802da1;
+    background-image: linear-gradient(to bottom, #802da1, #802da1);
+    border-color: #712b99 #712b99 #712b99;
+}
+
+/* pie de la pagina */
+footer{
+    background: #273746;
+    width:100%;
+    height: auto;
+    display: block;
+    position: relative;
+    font-size: 15px;
+}
+
+#p1{
+    text-decoration: none;
+    width: 100%;
+    height: 220px;
+}
+
+#p11, #p12, #p13{
+    padding: 20px 0px 20px 0px;
+    color:white;
+}
+
+#p11 a, #p12 a, #p13 > a > span{
+    text-decoration: none;
+    color:white;
+}
+
+#p11{
+    text-align: center;
+    background: #273746;
+    width: 34%;
+    height: 180px;
+    position: relative;
+    display: block;
+    float: left;
+}
+
+#p12{
+    text-align: center;
+    background: #273746;
+    width: 33%;
+    height: 180px;
+    position: relative;
+    display: block;
+    float: left;
+}
+
+#p13{
+    text-align: center;
+    background: #273746;
+    width: 33%;
+    height: 180px;
+    position: relative;
+    display: block;
+    float: left;
+}
+/* para quitar la linea del link */
+#p13 a{
+    text-decoration: none;
+}
+
+#red, #red1, #red2, #red3{
+    font-size: 35px;
+    display: inline-block;
+    width: 23%;
+    box-sizing: border-box;
+}
+
+footer > #p2{
+    padding: 20px 0px 20px 0px;
+    background: white;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+}
+
+/* Aqui termina los estilos de la pagina de inicio, encabezado y pie de pagina */
+
+/* Registro */
+#cuerpo-registro{
+    background: url("imagen/cat4.jpg") no-repeat  center center fixed;
+    background-size: cover;
+    z-index:0;
+}
+/* Aplca el filtro a la imagen de fondo */
+#cuerpo-registro::after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+    z-index:-1;
+}
+
+.formulario{
+    position: relative;
+    background: white;
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:2%;
+    padding-bottom:2%;
+    top: 150px;     
+}
+
+.row{
+    margin: 3% 9% 0 9%;
+}
+
+#logo-registro{
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row .cajas, .row .fecha{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color:#797D7F;
+    margin-left:2%;
+    margin-right:7%;
+}
+
+label a{
+    color: green;
+    text-decoration: underline;
+}
+
+.row .fecha{
+    width: 33%;
+}
+
+.btn.btn-warning.enlaton2 {
+    color: #ffffff;
+    background-color: #d35400;
+    background-image: linear-gradient(to bottom, #f39d12, #dc7733);
+    border-color: #E38D13 #E38D13 #E38D13;
+}
+.btn.btn-warning.enlaton2:hover {
+    color: #ffffff;
+    background-color: #dc7733;
+    background-image: linear-gradient(to bottom, #dc7733, #dc7733);
+    border-color: #E38D13 #E38D13 #E38D13;
+}
+
+.centrar{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* pagina de ingresar.php */
+#cuerpo-ingresar{
+    background: url("imagen/cat5.jpg") no-repeat  center center fixed;
+    background-size: cover;
+    z-index:0;
+}
+/* Aplca el filtro a la imagen de fondo */
+#cuerpo-ingresar::after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+    z-index:-1;
+}
+/*--------------------------------------*/
+
+/* estilo para cuenta.php */
+#uno-cuenta{
+    position: relative;
+    width:100%;
+    height: 590px;
+    background-color: #1fc8db;
+    background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    color: white;
+    opacity: 0.95;
+    text-align: center;
+}
+
+#dos-cuenta{
+    width:100%;
+    height: 500px;
+    background: #F0F3F4;
+    position: relative;
+}
+
+#a-datos{
+
+    position: relative;
+    width: 30%;
+    height: 500px;
+    float: left;
+}
+
+#habilitado, #deshabilitado{
+
+    position: relative;
+    width: 70%;
+    height: 500px;
+    float: left;
+}
+
+#b1,#b2{
+    width: 45%;
+    height:500px;
+    position:relative;
+    float:left;
+    padding-top: 5px;
+}
+
+
+.fecha2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 33%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    float: left;
+}
+
+#habilitado{
+    display: block;
+}
+
+#deshabilitado{
+    display: none;
+}
+
+.enlato.bot1{
+    color: #ffffff;
+    background-color: #6d3483;
+    background-image: linear-gradient(to bottom, #7742c7, #802da1);
+    border-color: #712b99 #712b99 #712b99;
+}
+
+.enlato:hover.bot1 {
+    color: #ffffff;
+    background-color: #802da1;
+    background-image: linear-gradient(to bottom, #802da1, #802da1);
+    border-color: #712b99 #712b99 #712b99;
+}
+
+.tamaño{
+    font-size: 18px;
+    padding: 4% 0 4% 0
+}
+
+#cuerpo-consultar{
+    background: url("imagen/cat2.jpg") no-repeat  center center fixed;
+    background-size: cover;
+    z-index:0;
+}
+
+
+/* pagina de consultas */
+#busc{
+    top:130px;
+    width: 75%;
+}
+
+#consulta-tabla{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+
+#consulta{
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+#consulta td, #th{
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 100%
+}
+
+#consulta tr:nth-child(even){background-color: #f2f2f2;}
+
+#consulta tr:hover {background-color: #ddd;}
+
+#th{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: center;
+    background: #48C9B0;
+    color: white;
+    font-size: 17px;
+}
+
+
+
+@media screen and (max-width: 1550px) and (max-height: 968px){
+    #cuerpo-registro::after{
+        width:100%;
+        height:150%;
+    }
+}
