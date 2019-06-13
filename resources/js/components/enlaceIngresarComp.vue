@@ -1,6 +1,6 @@
 <template>
-    <div @click="poner()">
-        jkhkjhkjhkhk
+    <div class="co" @click="poner()">
+        Ingresar
     </div>
 </template>
 <script>
@@ -12,7 +12,7 @@
         },
         methods:{
             poner(){
-                $('.ventana-modal').show();
+                $('#contenedor-nl-1-ing').show();
             }
         }
     }

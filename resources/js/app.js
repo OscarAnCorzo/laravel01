@@ -18,9 +18,13 @@ window.Vue = require('vue');
 
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
-Vue.component('boton', require('./components/boton.vue').default);
 Vue.component('mundo', require('./components/hola.vue').default);
-Vue.component('componente', require('./components/Componente.vue').default);
+
+Vue.component('enlace-ingresar-comp', require('./components/enlaceIngresarComp.vue').default);
+Vue.component('ingreso-comp', require('./components/ingresoComp.vue').default);
+
+Vue.component('enlace-registrar-comp', require('./components/enlaceRegistrarComp.vue').default);
+Vue.component('registro-comp', require('./components/registroComp.vue').default);
 
 /** 
  * Next, we will create a fresh Vue application instance and attach it to
