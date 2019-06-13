@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'ControladorPagina@inicio')->name('inicio');
+Route::get('prueba', 'ControladorPagina@prueba')->name('prueba');

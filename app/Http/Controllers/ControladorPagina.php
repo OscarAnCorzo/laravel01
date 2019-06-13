@@ -9,4 +9,8 @@ class ControladorPagina extends Controller
     public function inicio(){
         return view('inicio');
     }
+
+    public function prueba(){
+        return view('prueba');
+    }
 }

@@ -10,6 +10,7 @@
         <!--<link rel="stylesheet" href="css/fonts/style.css">-->
 
         <style>
+            /* estilos para los botones de Registate Aqui y Ver Detalles */
             .btn.btn-primary.enlaton {
                 color: #ffffff;
                 background-color: #6d3483;
@@ -31,6 +32,10 @@
         <title>Inicio</title>
     </head>
     <body>
+
+        <!-- 
+            La etiqueta header contiene todo el encabezado
+        -->
         <header>
             <div id="imagen">
                 <img src="/images/logo.png" width="100%" height="auto">
@@ -41,13 +46,8 @@
                         <input class="form-control  col-md-12 mr-sm-8 " type="search" placeholder="Busqueda Rapida" aria-label="Search">
                     </form>
                     <li class="nav-item">
-                      <a class="nav-link active co" href='" . route(inicio) . "'>Inicio</a>
+                      <a class="nav-link active co" href='" . route(inicio) . "'>##</a>
                     </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link active co" href='" . route(inicio) . "'>Contactenos</a>
-                    </li>
-                    
                     
                     <li class="nav-item">
                       <span class="co-linea"> | </span>
@@ -62,104 +62,202 @@
                   </ul>
         </header>
 
-        <div id="uno" class="contenedor">
-            <div id="contenido">
-                <p id="letra">
-                    <span style="font-size: 50px;"><b>Ohlala Shoes</b></span>
-                    <br>
-                    <span style="font-size: 35px;font-family: Arial, Helvetica, sans-serif;">
-                        <b>Bienvenidos a Nuestra Tienda Online,<br>
-                        Haz parte de nuestro amplio grupo de clientes y <br>
-                        tendras la mejor experiencia de compra. <br>
-                        </b>
-                    </span>
-                </p>
-                <br>
-                <a class="btn btn-success enlaton2 btn-lg bot" href="registro.php">Registrate Aqui</a>
-            </div>
-        </div>
-        <div id="dos">
-            <div id="titulo">
-                <p class="texto-titulo"> MODELOS </p>
-            </div>
-            <div id="a">
-                <div class="x">
-                    <div id="hombre" class="x1"></div>
-                    <div class="x2">
-                        <br>
-                        <p class="subtitulo"> Hombre </p>
-                        <p class="cont">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <a class="btn btn-primary enlaton btn-lg">Ver Detalles &nbsp > </a>
-                    </div>
-                </div>
-            </div>
-            <div id="b">
-                <div class="x">
-                    <div id="niña" class="x1"></div>
-                    <div class="x2">
-                        <br>
-                        <p class="subtitulo"> Niña </p>
-                        <p class="cont">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <a class="btn btn-primary enlaton btn-lg">Ver Detalles &nbsp > </a>
-                    </div>
-                </div>
-            </div>
-            <div id="c">
-                <div class="x">
-                    <div id="mujer" class="x1"></div>
-                    <div class="x2">
-                        <br>
-                        <p class="subtitulo"> Mujer </p>
-                        <p class="cont">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <a class="btn btn-primary enlaton btn-lg">Ver Detalles &nbsp > </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="footer mt-auto py-3">
-        
-            <div id="p1">
-                
-                <div id="p11">
-                    <span class="icon-bubbles4"></span> CONTÁCTENOS: </br></br>
-                    <span class="icon-phone"></span> PBX: (57)(7)6730000 | 3007300000 - 0000000000 <span class="icon-whatsapp"></span></BR></br>
-                    <span class="icon-mail2"></span> <a href="mailto:oscarcorzo15@hotmail.com" target=_blank>  hol@mundo.com </a></br></br>
+        <section id="barra_lateral" >
+            <nav id="nav-lateral">
+                <ul>
+                    <li>
+                        <a class="nav-link active co" href='" . route(inicio) . "'>Inicio</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active co" href='" . route(inicio) . "'>Ofertas</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active co" href='" . route(inicio) . "'>Modelos</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active co" href='" . route(inicio) . "'>Catalogos</a>
+                    </li>
                     
-                    BUCARAMANGA - SANTANDER - COLOMBIA<span class="icon-location"></span>
+                </ul>
+            </nav>
+            <!--<div id="app">
+                <componente></componente>
+            </div>-->
+            <br><br><br><br><br><br><br><br>
+        </section>
+
+        <section id="seccion" >
+            <div id="uno">
+                <div id="contenido">
+                    <p id="letra">
+                        <span style="font-size: 50px;"><b>Ohlala Shoes</b></span>
+                        <br>
+                        <span style="font-size: 35px;font-family: Arial, Helvetica, sans-serif;">
+                            <b>Bienvenidos a Nuestra Tienda Online,<br>
+                            Haz parte de nuestro amplio grupo de clientes y <br>
+                            tendras la mejor experiencia de compra. <br>
+                            </b>
+                        </span>
+                    </p>
+                    <br>
+                    <a class="btn btn-success enlaton2 btn-lg bot" href="registro.php">Registrate Aqui</a>
                 </div>
-    
-                <div id="p12">
-                    <a href="mantenimiento.php" target="_blank">PREGUNTAS FRECUENTES</a></br></br>
-                    <a href="mantenimiento.php" target="_blank">CONDICIONES Y RESTRIPCIONES</a></br></br>
-                    <a href="mantenimiento.php" target="_blank">GARANTIAS</a></BR></br>
-                    <a href="mantenimiento.php" target="_blank">POLITICAS DE ENVIOS</a></BR> </br>
-                </div>
-    
-                <div id="p13">
-                    </br>
-                    Nuestras Redes Sociales:</br></br></br>          
-                    <a href="" ><span id="red" class="icon-facebook"> &nbsp </span></a> <a href="" ><span id="red1" class="icon-twitter"> &nbsp </span></a> <a href="" ><span id="red2" class="icon-instagram"> &nbsp </span></a> <a href="" ><span id="red3" class="icon-youtube"></span></a>
-    
-                </div>
-    
             </div>
-    
-            <div id="p2">
-                </br>
-                Universidad Industrial de Santander
-                </br></br></br>
-                <span class="icon-copyright"></span> 2018 | Grupo D1 - Programación en la web | Todos los derechos reservados
-                </br></br></br>
+            <!---------------------------------------------------------------------->
+            <hr>
+            <!---------------------------------------------------------------------->
+            
+            <div id="bloques">
+                <div class="bloque">
+                    <div class="titulo">
+                        
+                        <p class="texto-titulo"> MODELOS </p>
+                        
+                    </div>
+                    <div class="producto">
+                        <div class="x">
+                            <div id="hombre" class="x1"></div>
+                            <div class="x2">
+                                <br>
+                                <p class="subtitulo"> Hombre </p>
+                                <p class="cont">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <a class="btn btn-primary enlaton btn-lg">Ver Detalles &nbsp > </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="x">
+                            <div id="hombre" class="x1"></div>
+                            <div class="x2">
+                                <br>
+                                <p class="subtitulo"> Hombre </p>
+                                <p class="cont">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <a class="btn btn-primary enlaton btn-lg">Ver Detalles &nbsp > </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="x">
+                            <div id="hombre" class="x1"></div>
+                            <div class="x2">
+                                <br>
+                                <p class="subtitulo"> Hombre </p>
+                                <p class="cont">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <a class="btn btn-primary enlaton btn-lg">Ver Detalles &nbsp > </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloque">
+                    <div class="titulo">
+                        <p class="texto-titulo"> MODELOS </p>
+                    </div>
+                    <div class="producto">
+                        <div class="x">
+                            <div id="hombre" class="x1"></div>
+                            <div class="x2">
+                                <br>
+                                <p class="subtitulo"> Hombre </p>
+                                <p class="cont">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <a class="btn btn-primary enlaton btn-lg">Ver Detalles &nbsp > </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="x">
+                            <div id="hombre" class="x1"></div>
+                            <div class="x2">
+                                <br>
+                                <p class="subtitulo"> Hombre </p>
+                                <p class="cont">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <a class="btn btn-primary enlaton btn-lg">Ver Detalles &nbsp > </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="x">
+                            <div id="hombre" class="x1"></div>
+                            <div class="x2">
+                                <br>
+                                <p class="subtitulo"> Hombre </p>
+                                <p class="cont">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <a class="btn btn-primary enlaton btn-lg">Ver Detalles &nbsp > </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-    
-        </footer>
+
+            
+<!--
+            <div id="dos">
+                <div class="titulo">
+                    <p class="texto-titulo"> MODELOS </p>
+                </div>
+                <div class="producto">
+                    <div class="x">
+                        <div id="hombre" class="x1"></div>
+                        <div class="x2">
+                            <br>
+                            <p class="subtitulo"> Hombre </p>
+                            <p class="cont">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <a class="btn btn-primary enlaton btn-lg">Ver Detalles &nbsp > </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="x">
+                        <div id="hombre" class="x1"></div>
+                        <div class="x2">
+                            <br>
+                            <p class="subtitulo"> Hombre </p>
+                            <p class="cont">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <a class="btn btn-primary enlaton btn-lg">Ver Detalles &nbsp > </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="x">
+                        <div id="hombre" class="x1"></div>
+                        <div class="x2">
+                            <br>
+                            <p class="subtitulo"> Hombre </p>
+                            <p class="cont">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <a class="btn btn-primary enlaton btn-lg">Ver Detalles &nbsp > </a>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <footer class="footer mt-auto py-3">
+                <div class="container">
+                    <span class="text-muted">Place sticky footer content here.</span>
+                </div>
+            </footer>
+
+            <br><br><br>
+            
+        </section>
 
         <script src="/js/app.js"></script>
     </body>
 </html>
+
+

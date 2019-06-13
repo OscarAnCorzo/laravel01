@@ -13,7 +13,7 @@
 header{
     position: fixed;
     width: 100%;
-    background: rgba(248, 123, 20, 0.8);
+    background: rgba(248, 123, 20, 1);
     z-index: 100;
 }
 
@@ -127,12 +127,6 @@ nav > ul > li > ul{
     display:none;
 }
 
-/* para mostrar los submenus cuando pase el mouse */
-nav ul li:hover ul{
-    display: block;
-    background: #FE9A2E;
-    filter:alpha(opacity=98);-moz-opacity:.80;opacity:.80;
-}
 
 .co{
     color:#8d1042;
@@ -151,7 +145,216 @@ nav ul li:hover ul{
     border-color: red;
 }
 
-/* ------------- Contenido -------------- */
+/* estilos de la venta de registrarse*/
+
+$background_color: #404142;
+$gmail_color: #D44638;
+$facebook_color: #3880FF;
+
+#contenedor-nl-1 {
+    background: rgba(0, 0, 0, 0.8);
+    position:fixed;
+    width:100%;
+    height:100vh;
+    display:flex;
+}
+
+#contenedor-nl-2 {
+    background: white;
+  overflow: hidden;
+  
+  width: 656px;
+  height: 400px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  box-shadow: 0 0 40px black;
+  color: #8b8c8d;
+  font-size: 0;
+    margin: auto;
+
+
+.box-part {
+    display: inline-block;
+    position: relative;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    vertical-align: top;
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    &#bp-right {
+      background: url("/images/hombre.jpg") no-repeat top left;
+      border-left: 1px solid #eee;
+    }
+  }
+  .box-messages {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .box-error-message {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 0;
+    line-height: 32px;
+    padding: 0 12px;
+    text-align: center;
+    width: 100%;
+    font-size: 11px;
+    color: white;
+    background: #F38181;
+  }
+  .partition {
+    width: 100%;
+    height: 100%;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    .partition-title {
+      box-sizing: border-box;
+      padding: 30px;
+      width: 100%;
+      text-align: center;
+      letter-spacing: 1px;
+      font-size: 20px;
+      font-weight: 300;
+    }
+    .partition-form {
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+  }
+  input[type=password],
+  input[type=text] {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 4px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 2;
+    border: 0;
+    border-bottom: 1px solid #DDDEDF;
+    padding: 4px 8px;
+    font-family: inherit;
+    transition: 0.5s all;
+    outline: none;
+  }
+  button {
+    background: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    min-width: 140px;
+    margin-top: 8px;
+    color: #8b8c8d;
+    cursor: pointer;
+    border: 1px solid #DDDEDF;
+    text-transform: uppercase;
+    transition: 0.1s all;
+    font-size: 10px;
+    outline: none;
+    &:hover {
+      border-color: mix(#DDDEDF, black, 90%);
+      color: mix(#8b8c8d, black, 80%);
+    }
+  }
+  .large-btn {
+    width: 100%;
+    background: white;
+    span {
+      font-weight: 600;
+    }
+    &:hover {
+      color: white !important;
+    }
+  }
+  .button-set {
+    margin-bottom: 8px;
+    display:flex;
+  }
+  #register-btn{
+    margin: auto;
+    border-color: #2CD140;
+    color: #2CD140;
+    &:hover {
+        border-color: #2CD140;
+        background: #2CD140;
+        color:white;
+      }
+  }
+  .facebook-btn {
+    border-color: $facebook_color;
+    color: $facebook_color;
+    &:hover {
+      border-color: $facebook_color;
+      background: $facebook_color;
+    }
+  }
+  .gmail-btn {
+    border-color: $gmail_color;
+    color: $gmail_color;
+    &:hover {
+      border-color: $gmail_color;
+      background: $gmail_color;
+    }
+  }
+  .autocomplete-fix {
+    position: absolute;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 0;
+  }
+}
+.pop-out-enter-active,
+.pop-out-leave-active {
+  transition: all 0.5s;
+}
+.pop-out-enter,
+.pop-out-leave-active {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+
+/* ------------ Barra Lateral ------------*/
+#barra_lateral {
+    width: 33%;
+    height: 100%;
+    background:#f4f2f0;
+    position: fixed;
+    z-index: 99;
+    top: 83px;
+    display: block;
+    float: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  /* ------------------------------------------------ */
+  
+  /* ------------- Contenido -------------- */
+  
+  #seccion {
+    width: 81.5%;
+    height:100%;
+    background: white;
+    position: fixed;
+    z-index: 99;
+    top: 83px;
+    left: 18.5%;
+    display: inline-block;
+    padding: 2% 2% 0 2%;
+    overflow-y: scroll;
+  }
+
+
 /* primera caja */
 #uno{
     width:100%;
@@ -161,13 +364,12 @@ nav ul li:hover ul{
     position: relative;
 }
 
-#contenido{
-    
+#contenido {
     position: relative;
-    width: 90%;
+    width: 95%;
     top: 28%;
-    left: 6%;
-}
+    left: 5%;
+  }
 
 #letra{
     color: white
@@ -183,19 +385,29 @@ nav ul li:hover ul{
 }
 
 /* segunda caja */
-#dos{
+
+
+/* segunda caja */
+#bloques{
     width:100%;
-    height: 590px;
-    background: #F0F3F4;
+    height: 1700px;
+    background: green;
     position: relative;
 }
 
-#titulo{
+.bloque {
+    width: 100%;
+    height: 600px;
+    background: #F0F3F4;
+    position: relative;
+  }
+  
+.titulo{
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 55px; 
-}
+    top: 20px;
+  }
 
 .texto-titulo{
     font-size: 30px;
@@ -203,7 +415,7 @@ nav ul li:hover ul{
     font-weight: bold;
 }
 
-#a, #b, #c{
+.producto{
     width: 33%;
     float: left;
 }
@@ -212,30 +424,16 @@ nav ul li:hover ul{
 .x{
     width: 65%;
     height: 400px;
-    margin-top: 150px;
+    margin-top: 120px;
     margin-left: auto;
     margin-right: auto
-}
-
-#hombre{
-    background-image: url('imagen/hombre.jpg') ;
-}
-
-#niña{
-    background-image: url('imagen/n4.jpg') ;
-}
-
-#mujer{
-    background-image: url('imagen/mujer.jpg') ;
-}
-
-#hombre, #niña, #mujer{
-    background-size: 100% 200px;
 }
 
 .x1{
     width: 100%;
     height: 200px;
+    background-image: url('imagen/hombre.jpg') ;
+    background-size: 100% 200px;
     border-radius: 60% 60% 60% 60%;
 }
 
@@ -283,70 +481,7 @@ footer{
     font-size: 15px;
 }
 
-#p1{
-    text-decoration: none;
-    width: 100%;
-    height: 220px;
-}
 
-#p11, #p12, #p13{
-    padding: 20px 0px 20px 0px;
-    color:white;
-}
-
-#p11 a, #p12 a, #p13 > a > span{
-    text-decoration: none;
-    color:white;
-}
-
-#p11{
-    text-align: center;
-    background: #273746;
-    width: 34%;
-    height: 180px;
-    position: relative;
-    display: block;
-    float: left;
-}
-
-#p12{
-    text-align: center;
-    background: #273746;
-    width: 33%;
-    height: 180px;
-    position: relative;
-    display: block;
-    float: left;
-}
-
-#p13{
-    text-align: center;
-    background: #273746;
-    width: 33%;
-    height: 180px;
-    position: relative;
-    display: block;
-    float: left;
-}
-/* para quitar la linea del link */
-#p13 a{
-    text-decoration: none;
-}
-
-#red, #red1, #red2, #red3{
-    font-size: 35px;
-    display: inline-block;
-    width: 23%;
-    box-sizing: border-box;
-}
-
-footer > #p2{
-    padding: 20px 0px 20px 0px;
-    background: white;
-    text-align: center;
-    width: 100%;
-    height: 150px;
-}
 
 /* Aqui termina los estilos de la pagina de inicio, encabezado y pie de pagina */
 
