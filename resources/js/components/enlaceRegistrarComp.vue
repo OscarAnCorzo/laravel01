@@ -1,6 +1,6 @@
 <template>
-    <div class="co" @click="poner()">
-        Registrame
+    <div @click="poner()">
+        Registrarme
     </div>
 </template>
 <script>

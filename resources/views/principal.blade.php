@@ -39,12 +39,12 @@
                 <img src="/images/logo.png" width="100%" height="auto" max-height="81px">
             </div>
             <nav id="barra">
-                <ul class="nav justify-content-end">
-                    <form class="form-inline my-2 my-lg-0 col-md-8" style="diplay:inline-block;right:5%">
+                <ul class="nav justify-content-end" style="width: 100%">
+                    <form class="form-inline my-2 col-md-7  my-lg-0" style="diplay:inline-block;right:5%">
                         <input class="form-control  col-md-12 mr-sm-2 " type="search" placeholder="Busqueda Rapida" aria-label="Search">
                     </form>
                     <li class="nav-item">
-                    <a class="nav-link active co" href='" . route(inicio) . "'>##</a>
+                    <a class="nav-link active co" href='#'>carrito</a>
                     </li>
                     
                     <li class="nav-item">
@@ -52,7 +52,9 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link co" ><enlace-registrar-comp></enlace-registrar-comp></a>
+                        <a class="nav-link co" >
+                                <enlace-registrar-comp></enlace-registrar-comp>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link co"><enlace-ingresar-comp></enlace-ingresar-comp></a>

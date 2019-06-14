@@ -12,4 +12,5 @@
 */
 
 Route::get('/', 'ControladorPagina@inicio')->name('inicio');
+Route::get('administrar', 'ControladorPagina@administrar')->name('administrar');
 Route::get('prueba', 'ControladorPagina@prueba')->name('prueba');

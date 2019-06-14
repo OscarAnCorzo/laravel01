@@ -25,6 +25,8 @@ Vue.component('ingreso-comp', require('./components/ingresoComp.vue').default);
 
 Vue.component('enlace-registrar-comp', require('./components/enlaceRegistrarComp.vue').default);
 Vue.component('registro-comp', require('./components/registroComp.vue').default);
+Vue.component('bloque-comp', require('./components/bloqueComp.vue').default);
+Vue.component('nombre-comp', require('./components/nombreComp.vue').default);
 
 /** 
  * Next, we will create a fresh Vue application instance and attach it to

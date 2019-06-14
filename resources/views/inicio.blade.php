@@ -6,7 +6,6 @@
 
 @section('cuerpo')
     <!------------ La etiqueta header contiene todo el encabezado --------------> 
-    @yield('encabezado')
         <section id="barra_lateral" >
             <nav id="nav-lateral">
                 <ul class="nav flex-column">
@@ -116,7 +115,7 @@
                         </span>
                     </p>
                     <br>
-                    <a class="btn btn-success enlaton2 btn-lg bot" href="registro.php">Registrate Aqui</a>
+                    <a class="btn btn-success enlaton2 btn-lg bot so"><enlace-registrar-comp></enlace-registrar-comp></a>
                 </div>
             </div>
             <!---------------------------------------------------------------------->
@@ -124,96 +123,11 @@
             <!---------------------------------------------------------------------->
             
             <div id="bloques">
-                <div class="bloque">
-                    <div class="titulo">
-                        
-                        <p class="texto-titulo"> MODELOS </p>
-                        
-                    </div>
-                    <div class="producto">
-                        <div class="x">
-                            <div id="hombre" class="x1"></div>
-                            <div class="x2">
-                                <br>
-                                <p class="subtitulo"> Hombre </p>
-                                <p class="cont">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <a class="btn btn-primary enlaton btn-lg">Ver Detalles &nbsp > </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="producto">
-                        <div class="x">
-                            <div id="hombre" class="x1"></div>
-                            <div class="x2">
-                                <br>
-                                <p class="subtitulo"> Hombre </p>
-                                <p class="cont">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <a class="btn btn-primary enlaton btn-lg">Ver Detalles &nbsp > </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="producto">
-                        <div class="x">
-                            <div id="hombre" class="x1"></div>
-                            <div class="x2">
-                                <br>
-                                <p class="subtitulo"> Hombre </p>
-                                <p class="cont">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <a class="btn btn-primary enlaton btn-lg">Ver Detalles &nbsp > </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bloque">
-                    <div class="titulo">
-                        <p class="texto-titulo"> MODELOS </p>
-                    </div>
-                    <div class="producto">
-                        <div class="x">
-                            <div id="hombre" class="x1"></div>
-                            <div class="x2">
-                                <br>
-                                <p class="subtitulo"> Hombre </p>
-                                <p class="cont">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <a class="btn btn-primary enlaton btn-lg">Ver Detalles &nbsp > </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="producto">
-                        <div class="x">
-                            <div id="hombre" class="x1"></div>
-                            <div class="x2">
-                                <br>
-                                <p class="subtitulo"> Hombre </p>
-                                <p class="cont">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <a class="btn btn-primary enlaton btn-lg">Ver Detalles &nbsp > </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="producto">
-                        <div class="x">
-                            <div id="hombre" class="x1"></div>
-                            <div class="x2">
-                                <br>
-                                <p class="subtitulo"> Hombre </p>
-                                <p class="cont">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <a class="btn btn-primary enlaton btn-lg">Ver Detalles &nbsp > </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                    <bloque-comp :lista_productos="{{json_encode($lista_productos_mas)}}" ></bloque-comp>
+                    
+                    <bloque-comp :lista_productos="{{json_encode($lista_productos_fem)}}"></bloque-comp>
+
             </div>
 
             
@@ -264,7 +178,7 @@
             </div>-->
             <footer class="footer mt-auto py-3">
                 <div class="container">
-                    <span class="text-muted">Place sticky footer content here.</span>
+                    <span class="text-muted">Aqui termina la vista de inicio</span>
                 </div>
             </footer>
 
