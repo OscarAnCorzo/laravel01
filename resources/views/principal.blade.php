@@ -5,6 +5,7 @@
         <!-- Etiquetas meta basicas -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <link rel="stylesheet" href="/css/app.css">
         <!--<link rel="stylesheet" href="css/fonts/style.css">-->
@@ -51,14 +52,26 @@
                     <span class="co-linea"> | </span>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link co" >
-                                <enlace-registrar-comp></enlace-registrar-comp>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link co"><enlace-ingresar-comp></enlace-ingresar-comp></a>
-                    </li>
+                    @if( $lista_cliente['nombre_usuario'] == '' )
+                        <li class="nav-item">
+                            <a class="nav-link co" >
+                                    <enlace-registrar-comp></enlace-registrar-comp>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link co"><enlace-ingresar-comp></enlace-ingresar-comp></a>
+                        </li>
+                    @else
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle co" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ $lista_cliente['nombre_usuario'] }}</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item letra-lateral" href="#">Perfil</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item letra-lateral" href="#">Salir</a>
+                            </div>
+                        </li>
+                    @endif
+                    
                 </ul>
         </header>
         @yield('cuerpo')

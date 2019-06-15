@@ -115,7 +115,7 @@
                         </span>
                     </p>
                     <br>
-                    <a class="btn btn-success enlaton2 btn-lg bot so"><enlace-registrar-comp></enlace-registrar-comp></a>
+                    <a class="btn btn-success enlaton2 btn-lg bot so"><enlace-registrar-comp ></enlace-registrar-comp></a>
                 </div>
             </div>
             <!---------------------------------------------------------------------->
@@ -185,6 +185,6 @@
             <br><br><br>
             
         </section>
-        <registro-comp></registro-comp>
+        <registro-comp ></registro-comp>
         <ingreso-comp></ingreso-comp>
 @endsection

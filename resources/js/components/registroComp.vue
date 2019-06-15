@@ -7,23 +7,21 @@
                               CREA TU CUENTA
                             </div>
                             <div class="partition-form">
-                            <form autocomplete="false">
+                            <form autocomplete="false" method="POST" action="/">
 
-                                <div class="autocomplete-fix">
-                                <input type="password">
-                                </div>
-
-                                <input id="n-email" type="text" placeholder="Correo Electronico">
-                                <input id="n-username" type="text" placeholder="Nombre Ususario">
-                                <input id="n-password2" type="password" placeholder="Contraseña">
-                            </form>
+                               
+                                <input type="hidden" name="_token" :value="csrf">
+                                <input id="n-email" type="text" name="email" placeholder="Correo Electronico">
+                                <input id="n-username" type="text" name="nombre_usuario" placeholder="Nombre Ususario">
+                                <input id="n-password2" type="password" name="password" placeholder="Contraseña">
+                            
 
                             <div style="margin-top: 35px">
                             </div>
 
                             <div class="button-set">
-                                <button id="register-btn" class="btn btn-warning enlaton2 bot centrar">Registrar</button>
-                            </div>
+                                <input type="submit" id="register-btn" class="btn btn-warning enlaton2 bot centrar" value="Registrar"/>
+                            </div></form>
                             <button class="large-btn gmail-btn">Conectar con <span>GMAIL</span></button>
                             <button class="large-btn facebook-btn">Conectar con <span>facebook</span></button>
                             
@@ -38,12 +36,12 @@
                 </div>
             </div>
 </template>
-<script>
-$(document).ready(function(){
-  $('.ventana-modal').hide();
-});
 
+<script>
 export default {
+  data: () => ({
+            csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+          }),
   methods:{
       quitar(){
           $('#app').click(function(e){

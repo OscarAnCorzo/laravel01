@@ -1939,32 +1939,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2049,9 +2023,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-$(document).ready(function () {
-  $('.ventana-modal').hide();
-});
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['variable']
 });
@@ -2106,11 +2078,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-$(document).ready(function () {
-  $('.ventana-modal').hide();
-});
 /* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+    };
+  },
   methods: {
     quitar: function quitar() {
       $('#app').click(function (e) {
@@ -38193,56 +38166,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("transition", { attrs: { name: "modal", width: _vm.modalWidth } }, [
-    _c("div", { staticClass: "modal-mask" }, [
-      _c("div", { staticClass: "modal-wrapper" }, [
-        _c("div", { staticClass: "modal-container" }, [
-          _c(
-            "div",
-            { staticClass: "modal-header" },
-            [
-              _vm._t("header", [
-                _vm._v("\n            default header\n          ")
-              ])
-            ],
-            2
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "modal-body" },
-            [
-              _vm._t("body", [_vm._v("\n            default body\n          ")])
-            ],
-            2
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "modal-footer" },
-            [
-              _vm._t("footer", [
-                _vm._v("\n            default footer\n            "),
-                _c(
-                  "button",
-                  {
-                    staticClass: "modal-default-button",
-                    on: {
-                      click: function($event) {
-                        return _vm.$emit("close")
-                      }
-                    }
-                  },
-                  [_vm._v("\n              OK\n            ")]
-                )
-              ])
-            ],
-            2
-          )
-        ])
-      ])
-    ])
-  ])
+  return _c("div", [_vm._v("\n  @csrf\n")])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -38409,7 +38333,79 @@ var render = function() {
         }
       }
     },
-    [_vm._m(0)]
+    [
+      _c("div", { attrs: { id: "contenedor-nl-2" } }, [
+        _c("div", { staticClass: "box-part", attrs: { id: "bp-left" } }, [
+          _c(
+            "div",
+            { staticClass: "partition", attrs: { id: "partition-register" } },
+            [
+              _c("div", { staticClass: "partition-title" }, [
+                _vm._v(
+                  "\n                              CREA TU CUENTA\n                            "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "partition-form" }, [
+                _c(
+                  "form",
+                  {
+                    attrs: {
+                      autocomplete: "false",
+                      method: "POST",
+                      action: "/"
+                    }
+                  },
+                  [
+                    _c("input", {
+                      attrs: { type: "hidden", name: "_token" },
+                      domProps: { value: _vm.csrf }
+                    }),
+                    _vm._v(" "),
+                    _c("input", {
+                      attrs: {
+                        id: "n-email",
+                        type: "text",
+                        name: "email",
+                        placeholder: "Correo Electronico"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("input", {
+                      attrs: {
+                        id: "n-username",
+                        type: "text",
+                        name: "nombre_usuario",
+                        placeholder: "Nombre Ususario"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("input", {
+                      attrs: {
+                        id: "n-password2",
+                        type: "password",
+                        name: "password",
+                        placeholder: "Contraseña"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("div", { staticStyle: { "margin-top": "35px" } }),
+                    _vm._v(" "),
+                    _vm._m(0)
+                  ]
+                ),
+                _vm._v(" "),
+                _vm._m(1),
+                _vm._v(" "),
+                _vm._m(2)
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _vm._m(3)
+      ])
+    ]
   )
 }
 var staticRenderFns = [
@@ -38417,79 +38413,37 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "contenedor-nl-2" } }, [
-      _c("div", { staticClass: "box-part", attrs: { id: "bp-left" } }, [
-        _c(
-          "div",
-          { staticClass: "partition", attrs: { id: "partition-register" } },
-          [
-            _c("div", { staticClass: "partition-title" }, [
-              _vm._v(
-                "\n                              CREA TU CUENTA\n                            "
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "partition-form" }, [
-              _c("form", { attrs: { autocomplete: "false" } }, [
-                _c("div", { staticClass: "autocomplete-fix" }, [
-                  _c("input", { attrs: { type: "password" } })
-                ]),
-                _vm._v(" "),
-                _c("input", {
-                  attrs: {
-                    id: "n-email",
-                    type: "text",
-                    placeholder: "Correo Electronico"
-                  }
-                }),
-                _vm._v(" "),
-                _c("input", {
-                  attrs: {
-                    id: "n-username",
-                    type: "text",
-                    placeholder: "Nombre Ususario"
-                  }
-                }),
-                _vm._v(" "),
-                _c("input", {
-                  attrs: {
-                    id: "n-password2",
-                    type: "password",
-                    placeholder: "Contraseña"
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticStyle: { "margin-top": "35px" } }),
-              _vm._v(" "),
-              _c("div", { staticClass: "button-set" }, [
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-warning enlaton2 bot centrar",
-                    attrs: { id: "register-btn" }
-                  },
-                  [_vm._v("Registrar")]
-                )
-              ]),
-              _vm._v(" "),
-              _c("button", { staticClass: "large-btn gmail-btn" }, [
-                _vm._v("Conectar con "),
-                _c("span", [_vm._v("GMAIL")])
-              ]),
-              _vm._v(" "),
-              _c("button", { staticClass: "large-btn facebook-btn" }, [
-                _vm._v("Conectar con "),
-                _c("span", [_vm._v("facebook")])
-              ])
-            ])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "box-part", attrs: { id: "bp-right" } }, [
-        _c("div", { staticClass: "box-messages" })
-      ])
+    return _c("div", { staticClass: "button-set" }, [
+      _c("input", {
+        staticClass: "btn btn-warning enlaton2 bot centrar",
+        attrs: { type: "submit", id: "register-btn", value: "Registrar" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("button", { staticClass: "large-btn gmail-btn" }, [
+      _vm._v("Conectar con "),
+      _c("span", [_vm._v("GMAIL")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("button", { staticClass: "large-btn facebook-btn" }, [
+      _vm._v("Conectar con "),
+      _c("span", [_vm._v("facebook")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "box-part", attrs: { id: "bp-right" } }, [
+      _c("div", { staticClass: "box-messages" })
     ])
   }
 ]

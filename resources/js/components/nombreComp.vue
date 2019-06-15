@@ -3,11 +3,8 @@
         {{variable}}
     </div>
 </template>
-<script>
-$(document).ready(function(){
-  $('.ventana-modal').hide();
-});
 
+<script>
 export default {
     props: ['variable']
 }
